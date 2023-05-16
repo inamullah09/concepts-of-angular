@@ -1,0 +1,12 @@
+.home {
+    min-height: 90vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    &-card {
+        box-shadow: 0 0 15px #00000030;
+        padding: 20px;
+        border-radius: 15px;
+    }
+}

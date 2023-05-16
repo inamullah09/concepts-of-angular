@@ -1,0 +1,10 @@
+<div class="container home">
+    <div class="home-card">
+        <p class="h1 text-center mb-4">Learning the concepts of angular</p>
+        <ul class="list-group">
+            <ng-container *ngFor="let concept of concepts">
+                <li class="list-group-item list-group-item-action" [routerLink]="concept.path">{{concept.title}}</li>
+            </ng-container>
+          </ul>
+    </div>
+</div>

@@ -1,0 +1,17 @@
+<div class="container">
+    <p class="h2 text-center mb-2">NgFor</p>
+    <div class="d-flex justify-content-center align-items-center mb-5">
+        <div>
+            <input type="text" class="search me-3" placeholder="Enter image url" [(ngModel)]="imageUrl">
+            <input type="number" class="quantity me-4" placeholder="Enter quantity" [(ngModel)]="quantity">
+        </div>
+        <div class="button btn btn-success" (click)="displayImages()">Search</div>
+    </div>
+
+    <div class="row">
+        <div class="col-3 mb-4" *ngFor="let image of images">
+            <!-- If direct url is given than sqaure brackets not required, sqaure brackets are used for variables -->
+            <img [src]="image" class="image">
+        </div>
+    </div>
+</div>
